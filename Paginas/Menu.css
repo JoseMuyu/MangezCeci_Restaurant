@@ -67,3 +67,18 @@ a {
     color: #fff;
     font-weight: bold;
 }
+@media (max-width:1024px){
+    .column-4{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:768px){
+    .column-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:480px){
+    .column-4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
