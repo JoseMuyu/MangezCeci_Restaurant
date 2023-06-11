@@ -1,0 +1,191 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* Estilos del carrusel */
+  .carousel {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+  }
+  
+  .carousel-item {
+    display: none;
+    position: relative;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+  }
+  
+  .carousel-item-next,
+  .carousel-item-prev {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    transform: translateX(0);
+  }
+  
+  .carousel-item-next.carousel-item-left {
+    transform: translateX(100%);
+  }
+  
+  .carousel-item-prev.carousel-item-right {
+    transform: translateX(-100%);
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    z-index: 1;
+    opacity: 0.5;
+    background: none;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: url("previous-icon.png");
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("next-icon.png");
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    list-style: none;
+  }
+  
+  .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+  }
+  
+  /* Estilos de las secciones adicionales */
+  .second-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  
+  .white-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .white-box .content {
+    flex: 1;
+  }
+  
+  .white-box img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .contact-section {
+    background-color: #ddd;
+    padding: 40px;
+  }
+  
+  .contact-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-section .container div {
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width:  100px;
+    height: auto;
+  }
+  
+  .footer-hours h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-social a {
+    margin-right: 10px;
+  }
+  
+  .footer-social img {
+    width: 30px;
+    height: 30px;
+  }
