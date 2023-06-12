@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/styleMenu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="Header">
+        <a href="#" class="logo">
+            <img src="../Recursos/LOGO_MangezCeci.png">
+            <h2 class="nombre_empresa" id="H2">MangezCeci</h2>
+        </a>
+        <nav>
+            <a class="ini dos" href="RECURSOS/PAGS/Registro.html">Inicio</a>
+            <a class="ini" href="">Menú</a>
+            <a class="ini" href="">Reservaciones</a>
+        </nav>
+    </header>
+    <script>
+        var header = document.getElementById('Header');
+        var h2 = document.getElementById('H2');
+        window.addEventListener('scroll', () => {
+            var scroll = window.scrollY
+            if (scroll > 10) {
+                header.style.backgroundColor = '#121212'
+                header.style.transition = 'background-color 0.2s ease';
+                h2.style.color = 'white';
+            } else {
+                header.style.backgroundColor = 'transparent'
+                h2.style.color = 'black';
+            }
+        })
+    </script>
+    <!--
+    
+    <main>
+        <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+  <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+ <h1>Informe sobre Atahualpa</h1>
+
+  <h2>Introducción</h2>
+  <p>Atahualpa fue el último gobernante del Imperio Inca y una de las figuras más destacadas de la historia de América del Sur. Nació en el año 1502 y su breve pero significativo reinado dejó una huella imborrable en la cultura y el legado de los incas.</p>
+
+  <h2>Contexto Histórico</h2>
+  <p>Atahualpa ascendió al trono inca en 1532 en medio de una guerra civil entre él y su medio hermano Huáscar. En ese momento, el Imperio Inca estaba en su apogeo, abarcando una gran extensión de territorio que se extendía desde el sur de Colombia hasta el norte de Chile. Sin embargo, también enfrentaba amenazas externas, como la llegada de los españoles liderados por Francisco Pizarro.</p>
+
+  <h2>Encuentro con los Españoles</h2>
+  <p>En noviembre de 1532, Atahualpa se encontró con Pizarro en Cajamarca. Aunque los incas superaban en número a los españoles, fueron sorprendidos y capturados debido a las superiores armas de fuego y la astucia estratégica de los conquistadores. Atahualpa fue hecho prisionero y ofreció un rescate masivo en oro y plata para su liberación, lo que desencadenó una serie de eventos cruciales.</p>
+
+  <h2>Ejecución de Atahualpa</h2>
+  <p>A pesar de haber cumplido con el rescate exigido, Atahualpa fue condenado a muerte por los españoles en julio de 1533. Su ejecución se llevó a cabo por estrangulación, y su muerte marcó el fin de la resistencia inca contra los invasores españoles. A partir de entonces, el Imperio Inca fue sometido a la colonización y al dominio español.</p>
+
+  <h2>Legado y Significado</h2>
+  <p>A pesar de su corto reinado, Atahualpa dejó una huella imborrable en la historia de los incas y de América del Sur en general. Su lucha contra los españoles y su trágico destino se convirtieron en símbolos de resistencia y orgullo para los pueblos indígenas. Además, su historia sirve como un recordatorio de los devastadores efectos del colonialismo en las culturas nativas.</p>
+
+ 
+    </main>
+    -->
+</body>
+
+</html>
