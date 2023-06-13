@@ -109,7 +109,14 @@ header a {
     color: #efefef;
     margin-bottom: 10px;
 }
-
+.pie-pagina .grupo-1 .box .map{
+    width: 100%;
+    height: 250px;
+}
+.pie-pagina .grupo-1 .box .map iframe{
+    width: 100%;
+    height: 100%;
+}
 .pie-pagina .grupo-2{
     background-color: #090909;
     padding: 15px 10px;
