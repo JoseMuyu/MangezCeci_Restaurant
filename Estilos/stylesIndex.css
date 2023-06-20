@@ -1,0 +1,48 @@
+/* Estilos generales */
+* {
+  outline: 2px solid red;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #262228;
+    height: 100vh;
+    color: #262228;
+  }
+
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* Estilos del carrusel */
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.5s ease-in;
+    align-items: center;
+  }
+  .carousel-inner img {
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+  }
+  img {
+    width: 100%;
+  }
+  
+  .carousel-item {
+    display: none;
+    position: relative;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
