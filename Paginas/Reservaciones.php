@@ -112,3 +112,37 @@ $canPersMesas = array();
             </form>
         </div>
     </main>
+        <!--Footer-->
+        <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Ubicanos</h2>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11841.417410516058!2d1.835972465825675!3d42.09988113948875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a508312251967d%3A0xc8dac010a7b1e524!2s08600%20Berga%2C%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sec!4v1686691729161!5m2!1ses-419!2sec" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Restaurante de comida fina. Experiencia gastronómica excepcional con ingredientes de
+                    calidad, técnicas innovadoras y presentaciones artísticas. Reservas disponibles.
+                    </br></br>
+                    Ambiente refinado,servicio impecable y selección de vinos excepcional.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#"><img src="../Recursos/ico_Facebook.png" height="50px"></a>
+                    <a href="#"><img src="../Recursos/ico_Instragram.png" height="50px"></a>
+                    <a href="#"><img src="../Recursos/ico_Twiter.png" height="50px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>Equipo XD</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!--Scripts para funcionamientos de la pagina-->
+    <script src="../Estilos/Scripts.js"></script>
+</body>
+
+</html>
