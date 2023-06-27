@@ -27,7 +27,39 @@ $fecPed = $_POST['dia_ped'];
 <body>
     <?php require_once 'vistaHeader.html' ?>
     <main>
-
+    <div class="contenedorsaso">
+            <h3>Verificación de datos</h3>
+            <div class="contenedor">
+                <div class="mesa">
+                    <?php
+                    $nomMesa = $mbd->obtenerDatoCondicion($conex->getCn(), "MESAS", "NOM_MES", " COD_MES = '" . $mesa . "'");
+                    ?>
+                    <p class="titulito">Mesa de la reservación:</p>
+                    <img src=<?php echo "../Recursos/img_Mesas/" . $mesa . ".png" ?>>
+                    <p><?php echo "$nomMesa" ?></p>
+                </div>
+                <div class="datos">
+                    <div class="datos">
+                        <p class="titulito">Reserva a nombre de:</p>
+                        <p class="datito"><?php echo "$nomPed" ?></p>
+                        <p class="titulito">Correo solicitado:</p>
+                        <p class="datito"><?php echo "$maiPed" ?></p>
+                        <p class="titulito">Teléfono celular responsable:</p>
+                        <p class="datito"><?php echo "$celPed" ?></p>
+                        <p class="titulito">Fecha de la reservación:</p>
+                        <p class="datito"><?php echo "$fecPed" ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <input class="aceptar" type="button" value="Mis datos son correctos" onclick="mostrarModal()">
+            <input class="aceptar" type="button" value="Mis datos no son correctos" onclick="noCorrecto()">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Gracias por su reserva, lo esperaremos con gusto</p>
+                <input type="button" value="Cerrar" onclick="cerrarModal()">
+            </div>
+        </div>
     </main>
     <?php require_once 'vistaFooter.html' ?>
 </body>
