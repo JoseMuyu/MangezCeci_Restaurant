@@ -62,6 +62,7 @@ $fecPed = $_POST['dia_ped'];
         </div>
     </main>
     <?php require_once 'vistaFooter.html' ?>
+    <script src="../Estilos/Scripts.js"></script>
 </body>
 
 </html>
