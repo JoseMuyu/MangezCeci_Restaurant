@@ -63,6 +63,23 @@ $fecPed = $_POST['dia_ped'];
     </main>
     <?php require_once 'vistaFooter.html' ?>
     <script src="../Estilos/Scripts.js"></script>
+    <script>
+        function mostrarModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+        }
+        function noCorrecto() {
+            window.location.href = "Reservaciones.php";
+        }
+        function cerrarModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.animation = "modalFadeOut 0.3s ease-out";
+            setTimeout(function() {
+                modal.style.display = "none";
+                modal.style.animation = "";
+            }, 300);
+        }
+    </script>
 </body>
 
 </html>
