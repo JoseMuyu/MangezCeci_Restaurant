@@ -119,18 +119,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 70px;
+    font-size: 80px;
     color: white;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: 'Flame Bold', sans-serif;
+    font-family: "Kristi Cursive", cursive;
   }
 
   @font-face {
     font-family: 'Flame Bold';
-    src: url('/fonts/FlameBold.otf') format('truetype');
+    src: url('/fonts/FlameCondensed.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
+
+
