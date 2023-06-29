@@ -113,3 +113,19 @@ table tr td{
 .inputsito input:focus {
     outline: none;
   }
+  .boton-enviar {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Quitar el borde */
+    border-radius: 4px; /* Darle una forma redondeada */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Agregar una transición suave */
+  }
+
+  .boton-enviar:hover {
+    background-color: #45a049; /* Cambiar el color de fondo al pasar el cursor */
+  }
+
+
+
