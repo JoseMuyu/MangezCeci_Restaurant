@@ -1,7 +1,5 @@
 /* Estilos generales */
-* {
-  outline: 2px solid red;
-}
+
 
 body {
     margin: 0;
@@ -105,4 +103,34 @@ body {
   }
   #cuadradoimg{
     padding: 0;
+  }
+
+  /*Seccion 3*/
+  .section-three {
+    position: relative;
+  }
+  
+  #seccion3 {
+    text-align: center;
+  }
+  
+  .texto-centrado-sec3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 70px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Flame Bold', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'Flame Bold';
+    src: url('/fonts/FlameBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
