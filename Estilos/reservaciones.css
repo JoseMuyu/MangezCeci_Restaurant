@@ -80,7 +80,7 @@ fieldset .titulo {
 
 .inputsitos table {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: rgb(250, 250, 250);
     margin: auto;
     padding: 50px 0 0 0;
 }
@@ -93,7 +93,7 @@ table tr td{
 }
 .inputsitos th,.inputsitos td{
     height: 25px;
-    background-color: #962d26;
+    background-color: #962d27;
     border-radius: 20px;
 }
 
