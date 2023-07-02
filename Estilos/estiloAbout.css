@@ -64,3 +64,26 @@ section{
     float: left;
     text-align: left;
 }
+
+#formulario{
+    background-color: #ebeef3;
+}
+
+/*Formulario*/
+.container {
+    max-width: 800px;   
+  }
+
+  label, textarea {
+    width: 400px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+   
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
