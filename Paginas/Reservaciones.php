@@ -110,7 +110,6 @@ $canPersMesas = array();
                     </tr>
                 </table>
                  <input type="submit" value="Enviar" class="boton-enviar">
-                 //input type="submit" value="Enviar"
                  
                             </form>
         </div>
