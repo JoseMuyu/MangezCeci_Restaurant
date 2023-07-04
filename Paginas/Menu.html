@@ -293,6 +293,23 @@
             </div>
         </section>
     </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            var sections = document.querySelectorAll('section');
+            var scrollPosition = window.pageYOffset;
+
+            sections.forEach(function (section) {
+                var sectionTop = section.offsetTop;
+                var sectionHeight = section.clientHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

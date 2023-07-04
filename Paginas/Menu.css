@@ -1,5 +1,5 @@
 body {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,9 +9,9 @@ a {
     text-decoration: none;
 }
 
-.wrap{
-   max-width: 1200px;
-   margin: 0 auto; 
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .column-4 {
@@ -37,92 +37,106 @@ a {
     background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
 }
 
-.wrap-text_tarjeta-rest p{
+.wrap-text_tarjeta-rest p {
     color: #f2f2f2;
 }
 
-.cta-wrap_tarjeta-rest{
+.cta-wrap_tarjeta-rest {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.precio_tarjeta-rest span{
+.precio_tarjeta-rest span {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.cta_tarjeta-rest{
+.cta_tarjeta-rest {
     background-color: #FFC300;
     padding: .25rem 1rem;
-    border-radius: 4px;  
+    border-radius: 4px;
 }
 
-.cta_tarjeta-rest a{
+.cta_tarjeta-rest a {
     color: #fff;
     font-weight: bold;
 }
 
-@media (max-width:1024px){
-    .column-4{
+@media (max-width:1024px) {
+    .column-4 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (max-width:768px){
-    .column-4{
+
+@media (max-width:768px) {
+    .column-4 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (max-width:480px){
-    .column-4{
+
+@media (max-width:480px) {
+    .column-4 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-.wrap1{
+
+.wrap1 {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .column-2.carta{
+}
+
+.column-2.carta {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
     row-gap: 1rem;
-  }
-  
-  .plato-carta{
+}
+
+.plato-carta {
     display: flex;
     align-items: center;
     border: 1px solid #e5e5e5;
     border-radius: 6px;
-  }
-  
-  .img-plato-carta{
+}
+
+.img-plato-carta {
     display: flex;
     flex-basis: 25%;
     justify-content: center;
-  }
-  
-  .img-plato-carta img{
+}
+
+.img-plato-carta img {
     max-width: 100px;
     max-height: 75px;
-  }
-  
-  .title-plato-carta{
+}
+
+.title-plato-carta {
     border: 1px solid #e5e5e5;
     border-bottom: none;
     border-top: none;
     flex-basis: 60%;
     padding: 0 1rem;
-  }
-  
-  .precio-plato-carta{
+}
+
+.precio-plato-carta {
     display: flex;
     flex-basis: 15%;
     justify-content: center;
     font-weight: bold;
-  }
-  @media (max-width:680px){
-    .column-2.carta{
-      grid-template-columns: repeat(1,1fr);
+}
+
+@media (max-width:680px) {
+    .column-2.carta {
+        grid-template-columns: repeat(1, 1fr);
     }
-  }
+}
+
+section {
+    opacity: 1; /* Opacidad por defecto para las secciones no activas */
+    transition: opacity 1s ease;
+}
+section.active {
+    opacity: 1; /* Opacidad para la sección activa */
+    transform: scale(1.1); /* Escala para la sección activa */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra para la sección activa */
+}
