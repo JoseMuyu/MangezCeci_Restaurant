@@ -23,7 +23,7 @@ $fecPed = $_POST['dia_ped'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Recursos/LOGO_MangezCeci.png" type="image/x-icon">
     <link rel="stylesheet" href="../Estilos/allPages.css">
-    <link rel="stylesheet" href="../Estilos/header_footer.css">
+    <link rel="stylesheet" href="../Estilos/styleMenu.css">
     <link rel="stylesheet" href="../Estilos/completarReserva.css">
     <title>MangezCesi | Completar Reserva</title>
 </head>

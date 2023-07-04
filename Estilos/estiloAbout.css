@@ -8,12 +8,16 @@ main{
    /* align-items: center;*/
     width: 80%;
     margin: 0 auto;
+    padding-top: 100px;
 }
 section{
     position: relative;
     margin: 0;
     padding: 2em;
     
+}
+.carousel-inner{
+    margin-left: 100px;
 }
 .estatico{
     text-align: justify;

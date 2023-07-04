@@ -17,6 +17,8 @@ header {
     align-items: center;
     box-sizing: border-box;
     transition: 0.05s;
+    z-index: 999;
+    background-color: #5fabd7;
 }
 
 .logo {
