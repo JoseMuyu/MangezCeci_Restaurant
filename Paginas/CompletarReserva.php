@@ -57,6 +57,8 @@ $fecPed = $_POST['dia_ped'];
             </div>
         </div>
             <input class="aceptar" type="button" value="Mis datos son correctos" onclick="mostrarModal()">
+            <?php
+            ?>
             <input class="aceptar" type="button" value="Mis datos no son correctos" onclick="noCorrecto()">
         <div id="myModal" class="modal">
             <div class="modal-content">
@@ -65,12 +67,12 @@ $fecPed = $_POST['dia_ped'];
             </div>
         </div>
     </main>
-    <?php require_once 'vistaFooter.html' ?>
     <script src="../Estilos/Scripts.js"></script>
     <script>
         function mostrarModal() {
             var modal = document.getElementById("myModal");
             modal.style.display = "block";
+
         }
         function noCorrecto() {
             window.location.href = "Reservaciones.php";
