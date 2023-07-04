@@ -3,6 +3,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url(img/fondoxd.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {
@@ -31,14 +36,14 @@ a {
 }
 
 .wrap-text_tarjeta-rest {
-    color: #fff;
+    color: #ffffff;
     padding: .5rem;
     border-radius: 6px;
-    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0 0 0 / .5));
 }
 
 .wrap-text_tarjeta-rest p {
-    color: #f2f2f2;
+    color: #ffffff;
 }
 
 .cta-wrap_tarjeta-rest {
@@ -58,7 +63,7 @@ a {
 }
 
 .cta_tarjeta-rest a {
-    color: #fff;
+    color: #222121;
     font-weight: bold;
 }
 
@@ -95,7 +100,7 @@ a {
 .plato-carta {
     display: flex;
     align-items: center;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #00ff40;
     border-radius: 6px;
 }
 
@@ -111,7 +116,7 @@ a {
 }
 
 .title-plato-carta {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #ff0000;
     border-bottom: none;
     border-top: none;
     flex-basis: 60%;
@@ -123,6 +128,14 @@ a {
     flex-basis: 15%;
     justify-content: center;
     font-weight: bold;
+}
+
+.wrap-title-section{
+    color: #000000;
+}
+
+.title-plato-carta{
+    color: #000000;
 }
 
 @media (max-width:680px) {
