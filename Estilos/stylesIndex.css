@@ -135,3 +135,32 @@ body {
   }
 
 
+
+.texto-centrado-car {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+
+  }
+#titulocarrucel{
+  font-family: "Kristi Cursive", cursive;
+  font-size: 60px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+#parrafocarrucel{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: left;
+
+}
