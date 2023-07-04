@@ -39,10 +39,10 @@ $canPersMesas = array();
             <h2 class="nombre_empresa" id="H2">MangezCeci</h2>
         </div>
         <nav>
-            <a class="op" href="../index.html">Inicio</a>
-            <a class="op" href="/Menu.html">Menú</a>
+            <a class="op" href="../Index.html">Inicio</a>
+            <a class="op" href="Menu.html">Menú</a>
             <a class="op" href="../About.html">Sobre nosotros</a>
-            <a class="op" href="/Reservaciones.php">Reservaciones</a>
+            <a class="op" href="Reservaciones.php">Reservaciones</a>
         </nav>
     </header>
     <div class="atrasHeader"></div>
