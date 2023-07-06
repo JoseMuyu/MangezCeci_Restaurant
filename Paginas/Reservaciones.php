@@ -23,8 +23,6 @@ $canPersMesas = array();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Recursos/LOGO_MangezCeci.png" type="image/x-icon">
-    <!--link del css general-->
-    <link rel="stylesheet" href="../Estilos/allPages.css">
     <!--links para header y footer-->
     <link rel="stylesheet" href="../Estilos/styleMenu.css">
     <!--links para cuerpo de pagina-->
