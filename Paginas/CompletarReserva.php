@@ -14,6 +14,17 @@ $maiPed = $_POST['mai_ped'];
 $celPed = $_POST['cel_ped'];
 $mesa = $_POST['mesa'];
 $fecPed = $_POST['dia_ped'];
+
+$sql = "INSERT INTO RESERVAS (nom_ped, mai_ped, cel_ped, cod_mes_per, dia_ped) VALUES ('$nomPed', '$maiPed', '$celPed', '$mesa', '$fecPed')";
+
+if ($conex->getCn()->query($sql) === TRUE) {
+    echo "Datos insertados correctamente1";
+}
+
+$sql2 = "UPDATE MESAS SET DIS_MES = 'N' WHERE COD_MES = '$mesa'";
+if ($conex->getCn()->query($sql2) === TRUE) {
+    echo "Datos insertados correctamente2";
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,7 +33,6 @@ $fecPed = $_POST['dia_ped'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Recursos/LOGO_MangezCeci.png" type="image/x-icon">
-    <link rel="stylesheet" href="../Estilos/allPages.css">
     <link rel="stylesheet" href="../Estilos/styleMenu.css">
     <link rel="stylesheet" href="../Estilos/completarReserva.css">
     <title>MangezCesi | Completar Reserva</title>
@@ -31,7 +41,7 @@ $fecPed = $_POST['dia_ped'];
 <body>
     <?php require_once 'vistaHeader.html' ?>
     <main>
-    <div class="contenedorsaso">
+        <div class="contenedorsaso">
             <h3>Verificación de datos</h3>
             <div class="contenedor">
                 <div class="mesa">
@@ -56,10 +66,7 @@ $fecPed = $_POST['dia_ped'];
                 </div>
             </div>
         </div>
-            <input class="aceptar" type="button" value="Mis datos son correctos" onclick="mostrarModal()">
-            <?php
-            ?>
-            <input class="aceptar" type="button" value="Mis datos no son correctos" onclick="noCorrecto()">
+        <input id="btnAceptar" class="aceptar" type="button" value="Presiona OK" onclick="mostrarModal()">
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <p>Gracias por su reserva, lo esperaremos con gusto</p>
@@ -72,11 +79,13 @@ $fecPed = $_POST['dia_ped'];
         function mostrarModal() {
             var modal = document.getElementById("myModal");
             modal.style.display = "block";
-
+            modal.style.animation = "modalFadeOut 0.3s ease-out";
         }
+
         function noCorrecto() {
             window.location.href = "Reservaciones.php";
         }
+
         function cerrarModal() {
             var modal = document.getElementById("myModal");
             modal.style.animation = "modalFadeOut 0.3s ease-out";
