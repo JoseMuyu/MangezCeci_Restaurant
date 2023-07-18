@@ -25,10 +25,12 @@ $canPersMesas = array();
     <link rel="icon" href="../Recursos/LOGO_MangezCeci.png" type="image/x-icon">
     <!--links para header y footer-->
     <link rel="stylesheet" href="../Estilos/styleMenu.css">
+    <link rel="stylesheet" href="../Estilos/footer.css">
     <!--links para cuerpo de pagina-->
     <link rel="stylesheet" href="../Estilos/reservaciones.css">
     <title>MangezCesi | Reservaciones</title>
 </head>
+
 <body>
     <!--Header-->
     <header id="Header">
@@ -37,7 +39,7 @@ $canPersMesas = array();
             <h2 class="nombre_empresa" id="H2">MangezCeci</h2>
         </div>
         <nav>
-            <a class="op" href="../Index.html">Inicio</a>
+            <a class="op" href="../index.html">Inicio</a>
             <a class="op" href="Menu.html">Menú</a>
             <a class="op" href="../About.html">Sobre nosotros</a>
             <a class="op" href="Reservaciones.php">Reservaciones</a>
@@ -48,12 +50,12 @@ $canPersMesas = array();
     <main>
         <div class="mesitas">
             <?php
-            $codsMesas = $mbd->obtenerDatos($conex->getCn(), "MESAS", "COD_MES");
+            $codsMesas = $mbd->obtenerDatos($conex->getCn(), "mesas", "COD_MES");
             $tamano = count($codsMesas);
-            $nomsMesas = $mbd->obtenerDatos($conex->getCn(), "MESAS", "NOM_MES");
-            $desMesas = $mbd->obtenerDatos($conex->getCn(), "MESAS", "DES_MES");
-            $valsMesas = $mbd->obtenerDatos($conex->getCn(), "MESAS", "VAL_MES");
-            $canPersMesas = $mbd->obtenerDatos($conex->getCn(), "MESAS", "CAN_PER_MES");
+            $nomsMesas = $mbd->obtenerDatos($conex->getCn(), "mesas", "NOM_MES");
+            $desMesas = $mbd->obtenerDatos($conex->getCn(), "mesas", "DES_MES");
+            $valsMesas = $mbd->obtenerDatos($conex->getCn(), "mesas", "VAL_MES");
+            $canPersMesas = $mbd->obtenerDatos($conex->getCn(), "mesas", "CAN_PER_MES");
             for ($i = 0; $i < $tamano; $i++) { ?>
                 <section class="mesita">
                     <fieldset>
@@ -62,7 +64,7 @@ $canPersMesas = array();
                         <p class="des"> Descripcion: <?php echo "$desMesas[$i]"; ?> </p>
                         <p class="val"> Costo: $<?php echo "$valsMesas[$i]"; ?> </p>
                         <p class="can"> Cantidad de personas: <?php echo "$canPersMesas[$i]"; ?> </p>
-                        <?php if ($mbd->obtenerDatoCondicion($conex->getCn(), "MESAS", "DIS_MES", "COD_MES = '" . $codsMesas[$i] . "'") == "S") { ?>
+                        <?php if ($mbd->obtenerDatoCondicion($conex->getCn(), "mesas", "DIS_MES", "COD_MES = '" . $codsMesas[$i] . "'") == "S") { ?>
                             <p class="aviso">Disponible</p>
                         <?php } else { ?>
                             <p class="aviso">No disponible</p>
@@ -92,13 +94,14 @@ $canPersMesas = array();
 
                     <tr>
                         <td class="labelsito">Mesa:</td>
-                        <td class="chkMesas">
-                            <?php for ($i = 0; $i < $tamano; $i++) { ?>
-                                <?php if ($mbd->obtenerDatoCondicion($conex->getCn(), "MESAS", "DIS_MES", "COD_MES = '" . $codsMesas[$i] . "'") == "S") { ?>
-                                    <input name="mesa" value=<?php echo $codsMesas[$i] ?> type="radio" required>
-                                    <label for="mesa"><?php echo $nomsMesas[$i] ?></label>
-                                <?php }  ?>
-                            <?php } ?>
+                        <td class="inputsito">
+                            <select name="mesa" class="cajitaingreso">
+                                <?php for ($i = 0; $i < $tamano; $i++) { ?>
+                                    <?php if ($mbd->obtenerDatoCondicion($conex->getCn(), "mesas", "DIS_MES", "COD_MES = '" . $codsMesas[$i] . "'") == "S") { ?>
+                                        <option value=<?php echo $codsMesas[$i] ?>><?php echo $nomsMesas[$i] ?></option>
+                                    <?php }  ?>
+                                <?php } ?>
+                            </select>
                         </td>
                     </tr>
 
@@ -107,12 +110,49 @@ $canPersMesas = array();
                         <td class="inputsito"><input type="date" id="dia_ped" name="dia_ped" required></td>
                     </tr>
                 </table>
-                 <input type="submit" value="Enviar" class="boton-enviar">
-                 
-                            </form>
+                <input type="submit" value="Enviar" class="boton-enviar">
+
+            </form>
         </div>
     </main>
-        
+    <footer>
+        <div class="redes-sociales">
+
+            <h5>Redes Sociales</h5>
+            <ul>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Facebook.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Instragram.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Twiter.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Youtube.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="propietarios">
+            <h5>Propietarios</h5>
+            <ul>
+                <li>Fermin Moro</li>
+                <li>Saida Rodrigues</li>
+                <li>Elsa Capunta</li>
+            </ul>
+        </div>
+        <div class="servicio-a-cliente">
+            <h5>Servicio a Cliente</h5>
+            <h6 class="space"> Horario de atención al cliente:</h6>
+
+            <ul class="space">
+                <li>Lunes a Viernes: 10:00 AM - 10:00 PM </li>
+                <li>Sábados y Domingos: 11:00 AM - 10:00 PM</li>
+            </ul>
+            <p class="space"><strong><em>Teléfono: </em></strong> (03) 2857831 <br>
+                <strong><em>Correo electrónico:</em> </strong>mangezceci@gmail.com <br>
+                <strong><em>Dirección: </em></strong> Av. Pedro Vásconez, Ambato
+            </p>
+
+        </div>
+
+        <div class="derechos-autor">
+            <p>Derechos reservados @2023 <em>MangezCeci Restaurant</em></p>
+        </div>
+    </footer>
     <!--Scripts para funcionamientos de la pagina-->
     <script src="../Estilos/Scripts.js"></script>
 </body>
