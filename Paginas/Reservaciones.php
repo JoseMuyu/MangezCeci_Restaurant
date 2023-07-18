@@ -120,10 +120,10 @@ $canPersMesas = array();
 
             <h5>Redes Sociales</h5>
             <ul>
-                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Facebook.png" alt=""></a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Instragram.png" alt=""></a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Twiter.png" alt=""></a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Youtube.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="../Recursos/ico_Facebook.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="../Recursos/ico_Instragram.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="../Recursos/ico_Twiter.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="../Recursos/ico_Youtube.png" alt=""></a></li>
             </ul>
         </div>
         <div class="propietarios">
