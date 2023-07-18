@@ -25,6 +25,7 @@ $canPersMesas = array();
     <link rel="icon" href="../Recursos/LOGO_MangezCeci.png" type="image/x-icon">
     <!--links para header y footer-->
     <link rel="stylesheet" href="../Estilos/styleMenu.css">
+    <link rel="stylesheet" href="../Estilos/footer.css">
     <!--links para cuerpo de pagina-->
     <link rel="stylesheet" href="../Estilos/reservaciones.css">
     <title>MangezCesi | Reservaciones</title>
@@ -114,7 +115,44 @@ $canPersMesas = array();
             </form>
         </div>
     </main>
+    <footer>
+        <div class="redes-sociales">
 
+            <h5>Redes Sociales</h5>
+            <ul>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Facebook.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Instragram.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Twiter.png" alt=""></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer"><img class="icon" src="Recursos/ico_Youtube.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="propietarios">
+            <h5>Propietarios</h5>
+            <ul>
+                <li>Fermin Moro</li>
+                <li>Saida Rodrigues</li>
+                <li>Elsa Capunta</li>
+            </ul>
+        </div>
+        <div class="servicio-a-cliente">
+            <h5>Servicio a Cliente</h5>
+            <h6 class="space"> Horario de atención al cliente:</h6>
+
+            <ul class="space">
+                <li>Lunes a Viernes: 10:00 AM - 10:00 PM </li>
+                <li>Sábados y Domingos: 11:00 AM - 10:00 PM</li>
+            </ul>
+            <p class="space"><strong><em>Teléfono: </em></strong> (03) 2857831 <br>
+                <strong><em>Correo electrónico:</em> </strong>mangezceci@gmail.com <br>
+                <strong><em>Dirección: </em></strong> Av. Pedro Vásconez, Ambato
+            </p>
+
+        </div>
+
+        <div class="derechos-autor">
+            <p>Derechos reservados @2023 <em>MangezCeci Restaurant</em></p>
+        </div>
+    </footer>
     <!--Scripts para funcionamientos de la pagina-->
     <script src="../Estilos/Scripts.js"></script>
 </body>
