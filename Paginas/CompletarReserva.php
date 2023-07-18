@@ -15,13 +15,15 @@ $celPed = $_POST['cel_ped'];
 $mesa = $_POST['mesa'];
 $fecPed = $_POST['dia_ped'];
 
-$sql = "INSERT INTO RESERVAS (nom_ped, mai_ped, cel_ped, cod_mes_per, dia_ped) VALUES ('$nomPed', '$maiPed', '$celPed', '$mesa', '$fecPed')";
+$valor = $mbd->obtenerDatoCondicion($conex->getCn(), "mesas", "val_mes", "cod_mes = '$mesa'");
+
+$sql = "INSERT INTO reservas (nom_ped, mai_ped, cel_ped, cod_mes_per, dia_ped, vat_tot) VALUES ('$nomPed', '$maiPed', '$celPed', '$mesa', '$fecPed', '$valor')";
 
 if ($conex->getCn()->query($sql) === TRUE) {
     echo "Datos insertados correctamente1";
 }
 
-$sql2 = "UPDATE MESAS SET DIS_MES = 'N' WHERE COD_MES = '$mesa'";
+$sql2 = "UPDATE mesas SET DIS_MES = 'N' WHERE COD_MES = '$mesa'";
 if ($conex->getCn()->query($sql2) === TRUE) {
     echo "Datos insertados correctamente2";
 }
@@ -46,7 +48,7 @@ if ($conex->getCn()->query($sql2) === TRUE) {
             <div class="contenedor">
                 <div class="mesa">
                     <?php
-                    $nomMesa = $mbd->obtenerDatoCondicion($conex->getCn(), "MESAS", "NOM_MES", " COD_MES = '" . $mesa . "'");
+                    $nomMesa = $mbd->obtenerDatoCondicion($conex->getCn(), "mesas", "NOM_MES", " COD_MES = '" . $mesa . "'");
                     ?>
                     <p class="titulito">Mesa de la reservación:</p>
                     <img src=<?php echo "../Recursos/img_Mesas/" . $mesa . ".png" ?>>

@@ -29,6 +29,7 @@ $canPersMesas = array();
     <link rel="stylesheet" href="../Estilos/reservaciones.css">
     <title>MangezCesi | Reservaciones</title>
 </head>
+
 <body>
     <!--Header-->
     <header id="Header">
@@ -92,13 +93,14 @@ $canPersMesas = array();
 
                     <tr>
                         <td class="labelsito">Mesa:</td>
-                        <td class="chkMesas">
-                            <?php for ($i = 0; $i < $tamano; $i++) { ?>
-                                <?php if ($mbd->obtenerDatoCondicion($conex->getCn(), "mesas", "DIS_MES", "COD_MES = '" . $codsMesas[$i] . "'") == "S") { ?>
-                                    <input name="mesa" value=<?php echo $codsMesas[$i] ?> type="radio" required>
-                                    <label for="mesa"><?php echo $nomsMesas[$i] ?></label>
-                                <?php }  ?>
-                            <?php } ?>
+                        <td class="inputsito">
+                            <select name="mesa" class="cajitaingreso">
+                                <?php for ($i = 0; $i < $tamano; $i++) { ?>
+                                    <?php if ($mbd->obtenerDatoCondicion($conex->getCn(), "mesas", "DIS_MES", "COD_MES = '" . $codsMesas[$i] . "'") == "S") { ?>
+                                        <option value=<?php echo $codsMesas[$i] ?>><?php echo $nomsMesas[$i] ?></option>
+                                    <?php }  ?>
+                                <?php } ?>
+                            </select>
                         </td>
                     </tr>
 
@@ -107,12 +109,12 @@ $canPersMesas = array();
                         <td class="inputsito"><input type="date" id="dia_ped" name="dia_ped" required></td>
                     </tr>
                 </table>
-                 <input type="submit" value="Enviar" class="boton-enviar">
-                 
-                            </form>
+                <input type="submit" value="Enviar" class="boton-enviar">
+
+            </form>
         </div>
     </main>
-        
+
     <!--Scripts para funcionamientos de la pagina-->
     <script src="../Estilos/Scripts.js"></script>
 </body>
