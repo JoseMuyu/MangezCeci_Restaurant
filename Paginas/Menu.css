@@ -76,22 +76,40 @@
     padding: 1rem 0.5rem;
     display: flex;
     align-items: end;
+    position: relative; 
+    overflow: hidden;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
   }
-  
+
+  .tarjeta-rest:hover .wrap-text_tarjeta-rest {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
   .wrap-text_tarjeta-rest {
     color: #ffffff;
     padding: 0.5rem;
     border-radius: 6px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(0 0 0 / .5));
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
-  
+
   .wrap-text_tarjeta-rest p {
     color: #ffffff;
+    opacity: 1;
+    font-style: italic;
   }
   
   .cta-wrap_tarjeta-rest {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
   }
   
   .precio_tarjeta-rest span {
@@ -182,6 +200,12 @@
     color: #000000;
     font-size: 1.2em;
     font-style: italic;
+  }
+  .Titulo {
+    font-style: italic;
+    color: #2c724f;
+    margin: 20px;
+    font-size: 1.5em;
   }
   
   @media (max-width: 680px) {
