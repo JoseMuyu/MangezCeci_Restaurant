@@ -1,10 +1,10 @@
 <?php
 
 class Conexxion {
-    private $host = "localhost";
+    private $host = "mysql-135690-0.cloudclusters.net:19816";
     private $nombreBD = "mysbd_proyectmanejo";
-    private $usuario = "root";
-    private $contrasena = "";
+    private $usuario = "admin";
+    private $contrasena = "cflkcD6A";
     private $cn;
 
     public function conectar(){
