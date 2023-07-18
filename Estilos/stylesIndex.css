@@ -132,15 +132,6 @@ img {
   text-overflow: ellipsis;
 }
 
-@font-face {
-  font-family: 'Flame Bold';
-  src: url('/fonts/FlameCondensed.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
 .texto-centrado-car {
 
   position: absolute;
