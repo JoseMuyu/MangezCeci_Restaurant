@@ -94,7 +94,7 @@ $canPersMesas = array();
                     <tr>
                         <td class="labelsito">Mesa:</td>
                         <td class="inputsito">
-                            <select class="cajitaingreso">
+                            <select name="mesa" class="cajitaingreso">
                                 <?php for ($i = 0; $i < $tamano; $i++) { ?>
                                     <?php if ($mbd->obtenerDatoCondicion($conex->getCn(), "mesas", "DIS_MES", "COD_MES = '" . $codsMesas[$i] . "'") == "S") { ?>
                                         <option value=<?php echo $codsMesas[$i] ?>><?php echo $nomsMesas[$i] ?></option>
