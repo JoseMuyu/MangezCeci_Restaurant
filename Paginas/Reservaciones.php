@@ -110,8 +110,9 @@ $canPersMesas = array();
                         <td class="inputsito"><input type="date" id="dia_ped" name="dia_ped" required></td>
                     </tr>
                 </table>
+                <center>
                 <input type="submit" value="Enviar" class="boton-enviar">
-
+                </center>
             </form>
         </div>
     </main>
