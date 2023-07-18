@@ -30,7 +30,7 @@
     </header>
     <div class="contGeneral">
         <div class="contenedor">
-            <div class="Titulo"> 
+            <div class="Titulo">
                 <h2>Menú del Día</h2>
             </div>
             <section class="wrap">
@@ -38,7 +38,8 @@
                     <div class="tarjeta-rest" style="background: url(img/pizza.jpg) center; background-size: cover;">
                         <div class="wrap-text_tarjeta-rest">
                             <h3>Pizza</h3>
-                            <p>Descubre nuestra pizza artesanal, una explosión de sabores en cada bocado. ¡Ven y disfruta de la auténtica tradición italiana en nuestro restaurante!</p>
+                            <p>Descubre nuestra pizza artesanal, una explosión de sabores en cada bocado. ¡Ven y
+                                disfruta de la auténtica tradición italiana en nuestro restaurante!</p>
                             <div class="cta-wrap_tarjeta-rest">
                                 <div class="precio_tarjeta-rest">
                                     <span>12$</span>
@@ -52,7 +53,8 @@
                     <div class="tarjeta-rest" style="background: url(img/Risotto.jpg) center; background-size: cover;">
                         <div class="wrap-text_tarjeta-rest">
                             <h3>Risotto</h3>
-                            <p>Deléitate con nuestro risotto italiano, cremoso y lleno de sabores irresistibles. ¡Ven y disfrútalo en nuestro restaurante hoy mismo!</p>
+                            <p>Deléitate con nuestro risotto italiano, cremoso y lleno de sabores irresistibles. ¡Ven y
+                                disfrútalo en nuestro restaurante hoy mismo!</p>
                             <div class="cta-wrap_tarjeta-rest">
                                 <div class="precio_tarjeta-rest">
                                     <span>10$</span>
@@ -66,7 +68,8 @@
                     <div class="tarjeta-rest" style="background: url(img/lasagna.jpg) center; background-size: cover;">
                         <div class="wrap-text_tarjeta-rest">
                             <h3>Lasagna</h3>
-                            <p>Nuestra lasaña casera te sorprenderá con su sabor excepcional. ¡Visítanos y disfruta de este clásico italiano en nuestro restaurante!</p>
+                            <p>Nuestra lasaña casera te sorprenderá con su sabor excepcional. ¡Visítanos y disfruta de
+                                este clásico italiano en nuestro restaurante!</p>
                             <div class="cta-wrap_tarjeta-rest">
                                 <div class="precio_tarjeta-rest">
                                     <span>15$</span>
@@ -80,7 +83,8 @@
                     <div class="tarjeta-rest" style="background: url(img/pasta.jpg) center; background-size: cover;">
                         <div class="wrap-text_tarjeta-rest">
                             <h3>Pasta</h3>
-                            <p>Descubre la auténtica pasta en nuestro restaurante. ¡Deléitate con sabores irresistibles!</p>
+                            <p>Descubre la auténtica pasta en nuestro restaurante. ¡Deléitate con sabores irresistibles!
+                            </p>
                             <div class="cta-wrap_tarjeta-rest">
                                 <div class="precio_tarjeta-rest">
                                     <span>8$</span>
@@ -533,6 +537,10 @@
                     </div>
                 </div>
             </section>
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-img">
+            </div>
         </div>
     </div>
     <script>
@@ -567,6 +575,28 @@
                 ingredientes.classList.toggle('hidden');
             });
         });
+
+        // Obtener el modal y la imagen dentro del modal
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("modal-img");
+
+        // Obtener todas las imágenes de las tarjetas
+        var images = document.querySelectorAll(".img-plato-carta img");
+
+        // Recorrer todas las imágenes y agregar un evento de clic
+        images.forEach(function (image) {
+            image.addEventListener("click", function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+
+        // Agregar un evento de clic al botón de cerrar el modal
+        var closeBtn = document.querySelector(".close");
+        closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
     </script>
 </body>
 
